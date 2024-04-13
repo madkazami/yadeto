@@ -1,0 +1,66 @@
+ clang gcc libssl-dev pkg-config
+
+sudo apt install npm
+
+npm install -g yarn 
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+source ~/.bashrc
+
+nvm install node
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+rustup update stable
+
+rustc --version
+
+sudo apt install nodejs
+
+sudo apt install npm
+
+cd ~
+curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
+
+sudo bash /tmp/nodesource_setup.sh
+
+sudo apt install nodejs
+
+node -v
+
+cd ~
+
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+
+ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+
+docker run hello-world
+
+sudo apt update
+
+sudo apt upgrade
+
+wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
+
+sudo tar -C /usr/local/ -xzf go1.13.5.linux-amd64.tar.gz
+
+cd /usr/local/
+
+echo 
